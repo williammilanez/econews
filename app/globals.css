@@ -35,7 +35,7 @@ button:focus:not(:focus-visible) {
   outline: none;
 }
 
-/* === Foco visível (Tab) - WCAG 2.4.7 === */
+/* === Skip Link === */
 .skip-link {
   position: absolute;
   left: 0.5rem;
@@ -54,4 +54,37 @@ button:focus:not(:focus-visible) {
 
 .skip-link:focus {
   transform: translateY(0.5rem);
+}
+
+/* === Header === */
+.header {
+  padding: 0.75rem 1rem;
+  background: #27272a;
+  border-bottom: 1px solid #3f3f46;
+}
+
+.header-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo-link img {
+  width: 36px;
+  height: 36px;
+  display: block;
 }
