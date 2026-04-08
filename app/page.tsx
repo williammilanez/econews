@@ -1,13 +1,18 @@
+import Featured from "./components/Featured";
 import Header from "./components/Header";
 import SkipLink from "./components/SkipLink";
 
+import { noticias } from "./data";
+
 export default function Home() {
+  const featuredNews = noticias[0];
+
   return (
     <>
       <SkipLink />
       <Header />
       <main id="conteudo" className="main">
-        {/* conteúdo futuro */}
+        {featuredNews && <Featured news={featuredNews} />}
       </main>
     </>
   );
