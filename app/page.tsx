@@ -1,5 +1,6 @@
 import Featured from "./components/Featured";
 import Header from "./components/Header";
+import NewsGrid from "./components/NewsGrid";
 import SkipLink from "./components/SkipLink";
 
 import { noticias } from "./data";
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <main id="conteudo" className="main">
         {featuredNews && <Featured news={featuredNews} />}
+        <NewsGrid items={noticias} />
       </main>
     </>
   );
