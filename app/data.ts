@@ -24,3 +24,13 @@ export const noticias: Noticia[] = [
     body: "O Brasil alcançou em 2025 um novo marco na geração de energia solar. A capacidade instalada superou 30 GW.",
   },
 ];
+
+function formatarData(s: string) {
+  return new Date(s + "T12:00:00").toLocaleDateString("pt-BR", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  });
+}
+
+export { formatarData };

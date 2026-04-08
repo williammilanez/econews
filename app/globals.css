@@ -136,3 +136,99 @@ button:focus:not(:focus-visible) {
 .search-btn:hover {
   background: #0369a1;
 }
+
+/* === Main === */
+.main {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ===== Featured (destaque) ===== */
+.featured {
+  margin-bottom: 2rem;
+}
+
+.featured-card {
+  border-radius: 0.5rem;
+  border: 1px solid #3f3f46;
+  background: #27272a;
+  overflow: hidden;
+}
+
+.featured-card:focus-within {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+.featured-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.featured-image-wrap {
+  position: relative;
+  height: 16rem;
+}
+
+@media (min-width: 640px) {
+  .featured-image-wrap {
+    height: 20rem;
+  }
+}
+
+.featured-image-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-content {
+  padding: 1rem 1.5rem;
+}
+
+.featured-category {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #7dd3fc;
+}
+
+.featured-title {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (min-width: 640px) {
+  .featured-title {
+    font-size: 1.5rem;
+  }
+}
+
+.featured-excerpt {
+  margin: 0.5rem 0 0;
+  color: #a1a1aa;
+}
+
+.featured-time {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #71717a;
+}

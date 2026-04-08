@@ -6,7 +6,9 @@ export default function Home() {
     <>
       <SkipLink />
       <Header />
-      <main id="conteudo">{/* conteúdo futuro */}</main>
+      <main id="conteudo" className="main">
+        {/* conteúdo futuro */}
+      </main>
     </>
   );
 }
