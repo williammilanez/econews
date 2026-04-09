@@ -5,12 +5,14 @@ import { formatarData, getNoticia } from "@/app/data";
 
 import Image from "next/image";
 import Link from "next/link";
+
 import { notFound } from "next/navigation";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
-export default function NoticiaPage({ params }: Props) {
-  const { slug } = params;
+export default async function NoticiaPage({ params }: Props) {
+  const { slug } = await params;
+
   const n = getNoticia(slug);
 
   if (!n) notFound();
