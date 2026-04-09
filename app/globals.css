@@ -311,6 +311,7 @@ button:focus:not(:focus-visible) {
   font-size: 0.875rem;
   color: #a1a1aa;
   display: -webkit-box;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

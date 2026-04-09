@@ -85,4 +85,8 @@ function formatarData(s: string) {
   });
 }
 
+export function getNoticia(slug: string): Noticia | undefined {
+  return noticias.find((n) => n.slug === slug);
+}
+
 export { formatarData };
