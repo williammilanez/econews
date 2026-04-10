@@ -40,7 +40,7 @@ O projeto foi estruturado com base em boas práticas de desenvolvimento front-en
 
 ## 🌐 Acesso
 
-🔗 **Aplicação:** _em breve_
+🔗 **Aplicação:** https://econews-five.vercel.app/
 
 ---
 
